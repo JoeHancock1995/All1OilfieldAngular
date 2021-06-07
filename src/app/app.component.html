@@ -303,8 +303,13 @@
     }
   }
 </style>
-
+<button mat-button>About Us</button>
 <button mat-button [matMenuTriggerFor]="Equipment">Equipment & Parts</button>
+<button mat-button>Clients</button>
+<button mat-button>Contact Us</button>
+
+
+<!-- Equipment nav sub menu -->
 <mat-menu #Equipment="matMenu">
   <button mat-menu-item [matMenuTriggerFor]="rotating">Rotating</button>
   <button mat-menu-item [matMenuTriggerFor]="handling">Handling</button>
