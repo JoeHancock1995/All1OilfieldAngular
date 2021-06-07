@@ -14,6 +14,18 @@ pages = [
   {
     'url': 'AboutPageComponent',
     'text': 'About'
+  },
+  {
+    'url': 'EquipmentPageComponent',
+    'text': 'Equipment'
+  },
+  {
+    'url': 'ContactPageComponent',
+    'text': 'Contact'
+  },
+  {
+    'url': 'ClientPageComponent',
+    'text': 'Client'
   }
 ]
 }

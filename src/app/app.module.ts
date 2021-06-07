@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavComponent } from './nav/nav.component';
+import { EquipmentPageComponent } from './equipment-page/equipment-page.component';
+import { ClientPageComponent } from './client-page/client-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { NavComponent } from './nav/nav.component';
     AboutPageComponent,
     HomePageComponent,
     NavComponent,
+    EquipmentPageComponent,
+    ClientPageComponent,
+    ContactPageComponent,
 
   ],
   imports: [
