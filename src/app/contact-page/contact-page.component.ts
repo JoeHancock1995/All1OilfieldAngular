@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact-page.component.css']
 })
 export class ContactPageComponent {
+submit(form:any) {
+  var firstName = form.firstName;
+  console.log(firstName);
 
-  constructor() { }
+  var lastName = form.lastName;
+  console.log(lastName);
 
+  var comment = form. comment;
+  console.log(comment);
+
+}
 }
