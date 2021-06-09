@@ -20,12 +20,12 @@ pages = [
     'text': 'Equipment'
   },
   {
+    'url': 'ClientPageComponent',
+    'text': 'Client'
+  },
+  {
     'url': 'ContactPageComponent',
     'text': 'Contact'
   },
-  {
-    'url': 'ClientPageComponent',
-    'text': 'Client'
-  }
 ]
 }

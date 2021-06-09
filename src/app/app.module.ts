@@ -15,7 +15,7 @@ import { NavComponent } from './nav/nav.component';
 import { EquipmentPageComponent } from './equipment-page/equipment-page.component';
 import { ClientPageComponent } from './client-page/client-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +32,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

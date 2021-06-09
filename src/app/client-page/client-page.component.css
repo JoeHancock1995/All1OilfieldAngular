@@ -41,10 +41,12 @@
   }
 
   .card.card-small {
-    height: 16px;
-    width: 168px;
+    height: 26px;
+    width: 376px;
   }
-
+  .card.card-small.expandable-content{
+    width: 376 px;
+  }
   .card-container .card:not(.highlight-card) {
     cursor: pointer;
   }
