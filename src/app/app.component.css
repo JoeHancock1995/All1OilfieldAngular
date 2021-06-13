@@ -1,3 +1,4 @@
+  @import '~@angular/cdk/overlay-prebuilt.css';
   .content {
     display: flex;
     margin: 32px auto 32px;
