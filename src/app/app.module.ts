@@ -14,6 +14,8 @@ import { EquipmentPageComponent } from './equipment-page/equipment-page.componen
 import { ClientPageComponent } from './client-page/client-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { FormsModule } from '@angular/forms';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
 
 
 
@@ -35,6 +37,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatDividerModule,
     FormsModule,
+    TabsModule
 
   ],
   providers: [],
