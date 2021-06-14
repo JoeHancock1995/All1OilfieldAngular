@@ -1,1 +1,62 @@
-<p>equipment-page works!</p>
+<div class="navmenu">
+  <button mat-button [matMenuTriggerFor]="Equipment">Equipment & Parts</button>
+
+  <mat-menu #Equipment="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="rotating">Rotating</button>
+    <button mat-menu-item [matMenuTriggerFor]="handling">Handling</button>
+    <button mat-menu-item [matMenuTriggerFor]="pressureControl">Pressure Control</button>
+    <button mat-menu-item [matMenuTriggerFor]="rigEquipment">Rig Equipment</button>
+    <button mat-menu-item [matMenuTriggerFor]="wellControl">Well Control</button>
+  </mat-menu>
+
+  <mat-menu #rotating="matMenu">
+    <button mat-menu-item>Top Drives</button>
+    <button mat-menu-item>Rotary Tables</button>
+    <button mat-menu-item>Power Swivels</button>
+    <button mat-menu-item>Breakout Units</button>
+    <button mat-menu-item>Drawworks</button>
+  </mat-menu>
+
+  <mat-menu #handling="matMenu">
+    <button mat-menu-item>Tubular handling systems</button>
+    <button mat-menu-item>BOP Handling systems</button>
+    <button mat-menu-item>Tree Hanling systems</button>
+    <button mat-menu-item>Riser handling</button>
+    <button mat-menu-item>Marine cranes</button>
+    <button mat-menu-item>Winches</button>
+    <button mat-menu-item>Hoists</button>
+    <button mat-menu-item>Reelers</button>
+    <button mat-menu-item>Catwalks Machines</button>
+
+  </mat-menu>
+  <mat-menu #pressureControl="matMenu">
+    <button mat-menu-item>Mud Pumps</button>
+    <button mat-menu-item>Shakers</button>
+    <button mat-menu-item>Choke and Kill Manifolds</button>
+  </mat-menu>
+
+  <mat-menu #rigEquipment="matMenu">
+    <button mat-menu-item>Iron Roughnecks</button>
+    <button mat-menu-item>Travelling Blocks</button>
+    <button mat-menu-item>Crown Blocks</button>
+    <button mat-menu-item>Guide Dollies</button>
+    <button mat-menu-item>Deadlines</button>
+    <button mat-menu-item>Spinners</button>
+    <button mat-menu-item>Mud Buckets</button>
+    <button mat-menu-item>HPU's</button>
+    <button mat-menu-item>Control Systems</button>
+    <button mat-menu-item>Compensators</button>
+    <button mat-menu-item>Tensioners</button>
+  </mat-menu>
+
+  <mat-menu #wellControl="matMenu">
+    <button mat-menu-item> Ram BOP's</button>
+    <button mat-menu-item>Annular BOP's</button>
+    <button mat-menu-item>Divertors</button>
+    <button mat-menu-item>Spools</button>
+    <button mat-menu-item> Closing Units</button>
+    <button mat-menu-item>Test Units</button>
+    <button mat-menu-item>Bottle Racks</button>
+    <button mat-menu-item>Umbilical's</button>
+  </mat-menu>
+</div>
