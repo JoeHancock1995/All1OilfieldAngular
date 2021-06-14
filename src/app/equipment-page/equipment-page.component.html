@@ -1,21 +1,21 @@
-<tabset [justified]="true">
+<!-- <tabset [justified]="true">
   <tab heading="Rotating">Rotating</tab>
   <tab heading="Handling">Handling</tab>
   <tab heading="Pressure Control">Pressure Control</tab>
     <tab heading="Rig Equipment">Rig Equipment</tab>
     <tab heading="Well Control">Well Control</tab>
-</tabset>
+</tabset> -->
 
 <div class="navmenu">
-  <button mat-button [matMenuTriggerFor]="Equipment">Equipment & Parts</button>
+  <!-- <button mat-button [matMenuTriggerFor]="Equipment">Equipment & Parts</button> -->
 
-  <mat-menu #Equipment="matMenu">
-    <button mat-menu-item [matMenuTriggerFor]="rotating">Rotating</button>
-    <button mat-menu-item [matMenuTriggerFor]="handling">Handling</button>
-    <button mat-menu-item [matMenuTriggerFor]="pressureControl">Pressure Control</button>
-    <button mat-menu-item [matMenuTriggerFor]="rigEquipment">Rig Equipment</button>
-    <button mat-menu-item [matMenuTriggerFor]="wellControl">Well Control</button>
-  </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="rotating">Rotating</button>
+    <button mat-button [matMenuTriggerFor]="handling">Handling</button>
+    <button mat-button [matMenuTriggerFor]="pressureControl">Pressure Control</button>
+    <button mat-button [matMenuTriggerFor]="rigEquipment">Rig Equipment</button>
+    <button mat-button [matMenuTriggerFor]="wellControl">Well Control</button>
+
 
   <mat-menu #rotating="matMenu">
     <button mat-menu-item>Top Drives</button>
