@@ -1,34 +1,39 @@
-<form #contactForm="ngForm" (ngSubmit)="submit(contactForm.value)">
+<!-- <h2 class="mb-5 text-center">Angular 12 Form Validation Example</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
 
   <div class="form-group">
-    <label for="firstName">First Name</label>
-    <input required minlength="3" maxlength="10" ngModel name="firstName" type="text" #firstName="ngModel"
-      class="form-control" id="firstName">
-    <div class="alert alert-danger" *ngIf="firstName.touched && !firstName.valid">
-      <div *ngIf="firstName.errors?.required">First Name is required.</div>
-      <div *ngIf="firstName.errors?.minlength">First Name is minimum {{ firstName.errors?.minlength.requiredLength }}
-        character.</div>
-      <div *ngIf="firstName.errors?.maxlength">First Name is maximum 10 character.</div>
+    <label>Name</label>
+    <input type="text" class="form-control" formControlName="name">
+    <div *ngIf="getControl.name.touched && getControl.name.invalid" class="text-danger">
+      <div *ngIf="getControl.name.errors.required">Name is required.</div>
+      <div *ngIf="getControl.name.errors?.minlength">Minimum 4 character are required.</div>
     </div>
   </div>
 
   <div class="form-group">
-    <label for="lastName">Last Name</label>
-    <input required ngModel name="lastName" type="text" #lastName="ngModel" class="form-control" id="lastName">
-    <div class="alert alert-danger" *ngIf="lastName.touched && !lastName.valid">
-      Last Name is required.
+    <label>Email</label>
+    <input type="text" class="form-control" formControlName="email">
+    <div *ngIf="getControl.email.touched && getControl.email.invalid" class="text-danger">
+      <div *ngIf="getControl.email.errors.required">Email is required.</div>
+      <div *ngIf="getControl.email.errors.email">Email seems invalid.</div>
     </div>
   </div>
 
   <div class="form-group">
-    <label for="comment">Comment</label>
-    <textarea required ngModel #comment="ngModel" name="comment" id="comment" cols="30" rows="10"
-      class="form-control"></textarea>
-    <div class="alert alert-danger" *ngIf="comment.touched && !firstName.valid">
-      Comment is required.
+    <label>Phone</label>
+    <input type="text" class="form-control" formControlName="phone">
+    <div *ngIf="getControl.phone.touched && getControl.phone.invalid" class="text-danger">
+      <div *ngIf="getControl.phone.errors.required">Phone is required.</div>
     </div>
   </div>
 
-  <button class="btn btn-primary" type="submit" [class.disabled]="!contactForm.valid">Submit</button>
-
-</form>
+  <div class="form-group">
+    <label>Message</label>
+    <textarea type="text" class="form-control" formControlName="message"></textarea>
+    <div *ngIf="getControl.message.touched && getControl.message.invalid" class="text-danger">
+      <div *ngIf="getControl.message.errors.required">Message is required.</div>
+    </div>
+  </div>
+  <button class="btn btn-danger btn-block" type="submit">Submit</button>
+</form> -->

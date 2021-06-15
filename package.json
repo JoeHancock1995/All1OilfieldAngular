@@ -30,6 +30,7 @@
     "jarallax": "^1.12.7",
     "ng-gallery": "^5.0.0",
     "ngx-bootstrap": "^6.2.0",
+    "nodemailer": "^6.6.1",
     "rxjs": "~6.6.0",
     "three": "^0.129.0",
     "tslib": "^2.1.0",

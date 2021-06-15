@@ -1,61 +1,136 @@
 <div class="card-container">
-    <p>Alliance One Oilfield was born from the merging of established oilfield service companies, joining their specialties
+  <mat-card>
+    <p class="about-description">Alliance One Oilfield was born from the merging of established oilfield service companies, joining their specialties
       and
       vast experiences into a single source for our clients.
       This is allowing us to offer our clients a full-service center for Onshore or Offshore drilling equipment and service
       for the full supply chain lifecycle needs.
       Alliance One Oilfield brings to our clients high-value solutions built upon a solid reputation and reference lists,
       showing our vast experience, for quality products and integrity.
-      Over and above our extensive Standard Product List, we can also craft Customized Solutions to meet your unique
-      requirements and budgets, using the latest 3-D design and animation technologies.</p>
-  <div class="card" (click)="toggle()" target="_blank" rel="noopener">
+      In addition to our extensive standard product list we also craft customized solutions using the latest 3-D design and animation technologies
+      to meet your unique requirements and budgets.
+    </p>
+      <br>
+  </mat-card>
+</div>
+  <!-- <div class="card" (click)="toggle()" target="_blank" rel="noopener">
     <span>Design & Engineering</span>
     <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
       <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
     </svg>
-    </div>
+    </div> -->
 
 
-  <a class="card" target="_blank" rel="noopener" href="https://all1oilfield.com/equipment-for-sale-2/">
-    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z" />
-    </svg> -->
-    <span>Inventory Assessment </span>
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-    </svg>
-  </a>
-
-  <a class="card" target="_blank" rel="noopener" href="https://all1oilfield.com/clients">
-    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-    </svg> -->
-    <span>Installation & Commissioning</span>
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-    </svg>
-  </a>
-
-  <a class="card" target="_blank" rel="noopener" href="https://all1oilfield.com/contact-us">
-    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-    </svg> -->
-    <span>OEM</span>
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-    </svg>
-  </a>
-
-  <a class="card" target="_blank" rel="noopener" href="https://all1oilfield.com/contact-us">
-    <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-    </svg> -->
-    <span>Supply Chain</span>
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-    </svg>
-  </a>
 
 
-</div>
+
+<mat-grid-list cols="4" rows='1'>
+
+  <mat-grid-tile colspan='2' rowspan="1">
+    <img src="../../assets/img/4.jpeg" alt="RIG">
+      <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions> -->
+    </mat-grid-tile>
+
+  <mat-grid-tile colspan='2' rowspan='1'>
+    <mat-card class="example-card">
+      <mat-card-content>
+        <mat-card-title>Design & Engineering</mat-card-title>
+          <p>
+            Alliance One Oilfield have extensive experience of the preliminary ground work for any project. We can provide full
+            support in all the front end areas by developing concepts, solutions, execution plans, project budgets, sourcing
+            strategies and project philosophies. Our team can provide support from one of our facilities or be seconded to your
+            office.
+          </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan='2' rowspan="1">
+    <img src="../../assets/img/3.jpeg" alt="RIG">
+    <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan='2' rowspan="1">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <mat-card-title>Inventory Assesment</mat-card-title>
+          <p>
+            Alliance One Oilfield provides inventory assessment survey. This can be performed on either capital equipment or spare
+            inventory. We will perform a survey, whether on the rig or within a shore based warehouse to determine condition of
+            equipment. Typically this service is performed on equipment that has been stacked and prior to being re-activated
+            allowing the customer to know exact condition prior to the re-activation. Spare inventory assessment also looks at
+            condition of spares and determines whether spares need to be replaced etc.
+          </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+
+    <mat-grid-tile colspan='2' rowspan="1">
+      <img src="../../assets/img/5.jpeg" alt="RIG">
+      <!-- <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions> -->
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan='2' rowspan="1">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>Supply Chain</mat-card-title>
+            <p>
+              Alliance One Oilfield is a supplier of equipment. We can build our standard product range and or equipment designed and
+              built to meet clients exact needs. Alliance One Oilfield management have over 100 years of combined experience in the
+              design, build and supply of handling systems.
+            </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+      <mat-grid-tile colspan='2' rowspan="1">
+        <img src="../../assets/img/6.jpeg" alt="RIG">
+        <!-- <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+            </mat-card-actions> -->
+      </mat-grid-tile>
+
+    <mat-grid-tile colspan='2' rowspan="1">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>Installation & Commissioning</mat-card-title>
+            <p>
+              Alliance One Oilfield has dedicated team to install our own equipment or indeed, equipment provided from other OEM’s.
+              We have trained technicians in mechanical, electrical and hydraulic.
+            </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+  <mat-grid-tile colspan='2' rowspan="1">
+    <img src="../../assets/img/7.jpeg" alt="RIG">
+    <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+  </mat-grid-tile>
+
+    <mat-grid-tile colspan='2' rowspan="1">
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>Original Equipment Manufacturer</mat-card-title>
+            <p>
+              Alliance One Oilfield offers a full turnkey supply chain group. Operating an agile and extremely responsive system to
+              allow us to quickly anticipate and respond to our client needs.
+            </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+</mat-grid-list>
+
