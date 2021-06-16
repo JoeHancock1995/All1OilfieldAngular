@@ -5,11 +5,9 @@
   }
 
 #myVideo{
-  position: relative;
   max-width: 100%s;
   width: 100%;
   height: 50%;
   max-height: 80%;
-  z-index: -1;
   /* margin: 2.5%; */
 }
