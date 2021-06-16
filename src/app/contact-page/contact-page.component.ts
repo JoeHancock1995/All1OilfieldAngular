@@ -1,59 +1,20 @@
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-page',
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.css']
 })
+
 export class ContactPageComponent {
-submit(form:any) {
-  var firstName = form.firstName;
-  console.log(firstName);
+  email = new FormControl('', [Validators.required, Validators.email]);
 
-  var lastName = form.lastName;
-  console.log(lastName);
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
 
-  var comment = form. comment;
-  console.log(comment);
-
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
 }
-}
-
-
-
-
-
-// import { Component, OnInit } from '@angular/core';
-// import { FormGroup, FormBuilder, Validators } from "@angular/forms";
-
-// @Component({
-//   selector: 'app-reactive-form',
-//   templateUrl: './reactive-form.component.html',
-//   styleUrls: ['./reactive-form.component.css']
-// })
-
-// export class ReactiveFormComponent implements OnInit {
-
-//   userForm: FormGroup;
-
-//   constructor(public formBuilder: FormBuilder) { }
-
-//   ngOnInit(): void {
-//     this.userForm = this.formBuilder.group({
-//       name: ['', [Validators.required, Validators.minLength(4)]],
-//       email: ['', [Validators.required]],
-//       phone: ['', [Validators.required]],
-//       message: ['', [Validators.required]]
-//     })
-//   }
-
-//   get getControl() {
-//     return this.userForm.controls;
-//   }
-
-//   onSubmit() {
-//     console.log(this.userForm);
-//   }
-
-// }

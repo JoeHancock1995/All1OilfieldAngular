@@ -32,17 +32,17 @@ import { ShadowComponent } from './shadow/shadow.component';
     ShadowComponent,
   ],
   imports: [
-    MatGridListModule,
-    MatCardModule,
+
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
     MatDividerModule,
+    MatGridListModule,
+    MatCardModule,
     FormsModule,
-    TabsModule
-
+    TabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

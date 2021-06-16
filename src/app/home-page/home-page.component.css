@@ -1,14 +1,15 @@
-  /* .video-container {
-    position: absolute;
+  .video-container {
     display: absolute;
     margin-top: 10px;
     padding-top: 20px;
-  } */
+  }
 
 #myVideo{
-  max-width: 90%s;
-  width: 95%;
+  position: relative;
+  max-width: 100%s;
+  width: 100%;
   height: 50%;
   max-height: 80%;
-  margin: 2.5%;
+  z-index: -1;
+  /* margin: 2.5%; */
 }
